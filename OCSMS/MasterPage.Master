@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="OCSMS.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="Stylesheet" href="GlobalCss.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        &nbsp;
+        <asp:Image ID="Image1" runat="server" Height="37px" ImageAlign="AbsMiddle" ImageUrl="~/logo.png"
+            Width="37px" />
+        Online Computer Shop Management System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div style="text-align: right; margin-top: -35px;">
+            <asp:LinkButton ID="LbCP" runat="server" ForeColor="#000066" 
+                onclick="LbFP_Click" Visible="False">Change Password</asp:LinkButton>
+            <asp:LinkButton ID="LbCart" runat="server" ForeColor="#66FF99" 
+                onclick="LbCart_Click" Visible="False">Cart</asp:LinkButton>
+            <asp:Label ID="LblEmail" runat="server" ForeColor="#99CCFF" Text="Label" 
+                Visible="False"></asp:Label>
+            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="LbCss" OnClick="LinkButton1_Click"
+                ForeColor="#000066"><span class="glyphicon glyphicon-home"></span> Home</asp:LinkButton>&nbsp;
+            <asp:LinkButton ID="LbSignUp" runat="server" ForeColor="#000066" OnClick="LbSignUp_Click"><span class="glyphicon glyphicon-user"></span> Sign Up</asp:LinkButton>
+            &nbsp;
+            <asp:LinkButton ID="LbLogin" runat="server" ForeColor="#000066" OnClick="LbLogin_Click"><span class="glyphicon glyphicon-log-in"></span> User Login</asp:LinkButton>
+            &nbsp;
+            <asp:LinkButton ID="LbAdmin" runat="server" ForeColor="#000066" OnClick="LbAdmin_Click"><span class="glyphicon glyphicon-lock"></span> Admin Login</asp:LinkButton>
+            <asp:Button ID="BtnLogout" runat="server" CssClass="BtnCss" OnClick="BtnLogout_Click"
+                Text="Logout" Visible="False" />
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="contentBody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div id="footer">
+        Online Computer Shop Management System. © 2021 All Rights Reserved. By Zeel Patel
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿#header
+{
+    background-color:#006FB9;
+    border-bottom:2px solid white;
+    width:100%;
+    color:White;
+    font-family:Arial;
+    font-weight:bold;
+    margin-top:-8px;
+    padding-right:16px;
+    padding-top:12px;
+    padding-bottom:19px;
+    border-radius:5px;
+}
+#footer
+{
+    border-top:2px solid white;
+    background-color:#006FB9;
+    width:100%;
+    color:White;
+    font-family:Arial;
+    font-weight:bold;
+    position:relative;
+    bottom:0;
+    text-align:center;
+    padding-top:12px;
+    padding-bottom:12px;
+    border-radius:5px;    
+}
+body
+{
+    line-height:20px;
+    background-color:white;
+    font-family:Arial;
+    font-size:10px;
+    color:black;
+    font-weight:bold;
+}
+.BtnCss
+{
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    color:White;
+    background-color:#0084CD;
+    border: 0px;
+    border-radius:5px;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:12px;
+    padding-right:12px;
+}
+.BtnCart
+{
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    color:White;
+    background-color:Green;
+    border: 0px;
+    border-radius:5px;
+    padding-bottom:5px;
+    padding-top:5px;
+    padding-left:12px;
+    padding-right:12px;
+}
+.LbCss
+{
+    color:darkblue;
+}
+.TbCss
+{
+    border:1px solid black;
+    border-radius:5px;
+    height:20px;
+}
+h3
+{
+    font-family:Arial;
+    font-size:30px;
+    font-weight:bold;
+}
+#offer
+{
+    height:300px;
+    width:600px;
+}
+#divform
+{
+    padding-left: 10px;    
+    max-width: 500px;
+    margin: auto;
+    border:2px solid black;
+    padding-bottom:10px;
+}
